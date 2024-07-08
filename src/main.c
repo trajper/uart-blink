@@ -1,5 +1,4 @@
 #include "pico/stdio.h"
-#include "FreeRTOS.h"
 
 #include "gpio.h"
 #include "uart_blink.h"

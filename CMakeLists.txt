@@ -5,7 +5,6 @@ set(PROJECTNAME uart_blink)
 set(SRC_DIR src)
 
 include(pico_sdk_import.cmake)
-include(FreeRTOS_Kernel_import.cmake)
 
 project(${PROJECTNAME})
 
@@ -24,7 +23,6 @@ target_include_directories(${PROJECTNAME} PRIVATE
 
 target_link_libraries(${PROJECTNAME}
     pico_stdlib
-    FreeRTOS-Kernel-Heap4
 )
 
 pico_add_extra_outputs(${PROJECTNAME})
